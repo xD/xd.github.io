@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>What is my IP?</title>
+</head>
+<script type="application/javascript">
+  function getIP(json) {
+    document.write('<b>IP: </b>', json.ip, 
+    			   '<br><b>Hostname: </b>', json.hostname, 
+    			   '<br><b>City: </b>', json.city, 
+    			   '<br><b>Country: </b>', json.country,
+    			   '<br><b>Provider: </b>', json.org);
+  }
+</script>
+
+<script type="application/javascript" src="http://ipinfo.io/?format=jsonp&callback=getIP"></script>
+
+</html>
